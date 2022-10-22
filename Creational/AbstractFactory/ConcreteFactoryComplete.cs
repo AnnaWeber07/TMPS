@@ -4,19 +4,19 @@ using System.Text;
 
 namespace Creational.AbstractFactory
 {
-    public class ConcreteFactoryDiabetes : AFAnalysis
+    public class ConcreteFactoryComplete : AFAnalysis
     {
         //implements the operations to create concrete products
         //concrete analysis checklist for diabetes
 
-        public override AbstractAnalysisGeneral CreateProductGeneral()
+        public override AbstractProductGeneral CreateProductGeneral()
         {
-            return new GeneralDiabetes();
+            return new GeneralComplete();
         }
 
         public override AbstractProductSpecific CreateProductSpecific()
         {
-            return new SpecificDiabetes();
+            return new SpecificComplete();
         }
     }
 }

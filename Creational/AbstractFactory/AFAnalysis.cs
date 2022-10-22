@@ -8,8 +8,8 @@ namespace Creational.AbstractFactory
     {
         //declares an interface for operations that create abstract products
         //implemented analysis list for diabetes and hormones
-        
-        public abstract AbstractAnalysisGeneral CreateProductGeneral();
+
+        public abstract AbstractProductGeneral CreateProductGeneral();
         public abstract AbstractProductSpecific CreateProductSpecific();
 
     }

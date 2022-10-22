@@ -2,17 +2,17 @@
 
 namespace Creational.AbstractFactory
 {
-    public class GeneralHormones : AbstractProductGeneral
+    public class GeneralComplete : AbstractProductGeneral
     {
+
         public override void GenerateCompleteList()
         {
-            Console.WriteLine("This is a General Hormones Blood Analysis: ");
+            Console.WriteLine("This is a Complete General Blood Analysis: ");
         }
 
         public override void GenerateFullList(GeneralHormones generalHormones)
         {
-            GenerateCompleteList();
+            Console.WriteLine("This is a Cmoplete General Blood Analysis including Hormones: ");
         }
-
     }
 }

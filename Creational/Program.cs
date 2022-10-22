@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Creational.AbstractFactory;
+using System;
 
 namespace Creational
 {
@@ -8,14 +9,17 @@ namespace Creational
         {
             //in this lab work I've implemented 5 creational patterns
 
-            //Overall Idea - Hospital-Patient Data Management and Composition
-            //Abstract Factory -  required analysis
-            //FactoryMethod - prescription generation
-            //Builder - composes data together depenging on sickness
-            //prototype - clones data
-            //singleton - global visualization of data
+            //AF
 
+            AFAnalysis analysis1 = new ConcreteFactoryComplete();
+            AFClient client1 = new AFClient(analysis1);
+            client1.Run();
 
+            AFAnalysis analysis2 = new ConcreteFactoryHormones();
+            AFClient client2 = new AFClient(analysis2);
+            client2.Run();
+
+            Console.ReadKey();
         }
     }
 }
