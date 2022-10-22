@@ -6,7 +6,21 @@ namespace Creational.AbstractFactory
 {
     public class AFClient
     {
-        //TODO: fill the AF client
+        private AbstractProductGeneral abstractProductGeneral;
+        private AbstractProductSpecific abstractProductSpecific;
+
+        public AFClient(AFAnalysis analysis)
+        {
+            abstractProductGeneral = analysis.CreateProductGeneral();
+            abstractProductSpecific = analysis.CreateProductSpecific();
+        }
+
+        public void Run()
+        {
+            abstractProductGeneral.GenerateCompleteList();
+            abstractProductSpecific.GenerateHormonesList();
+        }
+
     }
 
 }
