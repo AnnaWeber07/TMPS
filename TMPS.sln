@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.32126.315
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TMPS", "TMPS\TMPS.csproj", "{F2B3BA7D-FCDD-45DF-BEB0-BE2BDF03F24E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Creational", "Creational\Creational.csproj", "{6E97BF38-9CDF-44AD-BA47-CFA4910EF951}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{F2B3BA7D-FCDD-45DF-BEB0-BE2BDF03F24E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F2B3BA7D-FCDD-45DF-BEB0-BE2BDF03F24E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F2B3BA7D-FCDD-45DF-BEB0-BE2BDF03F24E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E97BF38-9CDF-44AD-BA47-CFA4910EF951}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E97BF38-9CDF-44AD-BA47-CFA4910EF951}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E97BF38-9CDF-44AD-BA47-CFA4910EF951}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E97BF38-9CDF-44AD-BA47-CFA4910EF951}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
