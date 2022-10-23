@@ -18,4 +18,3 @@ namespace Creational.FactoryMethod
         public abstract void CreateDocs();
     }
 }
-}
