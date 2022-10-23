@@ -8,9 +8,9 @@ namespace Creational.Prototype
     {
         void Operation()
         {
-            Prototype prototype = new ConcretePrototype1(1);
+            Prototype prototype = new ConcretePrototypeAnalysis (1);
             Prototype clone = prototype.Clone();
-            prototype = new ConcretePrototype2(2);
+            prototype = new ConcretePrototypeDiet(2);
             clone = prototype.Clone();
         }
     }
