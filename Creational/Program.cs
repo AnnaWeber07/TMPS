@@ -1,4 +1,6 @@
 ﻿using Creational.AbstractFactory;
+using Creational.Builder;
+using Creational.FactoryMethod;
 using System;
 
 namespace Creational
@@ -10,9 +12,9 @@ namespace Creational
             //in this lab work I've implemented 5 creational patterns
 
             //AF - generating 2 types of blood analysis list,
-            //complete and specific ones
+            //complete and specific ones. Separated by logical analysis sections
 
-            //FM - create a session with doctors (offline/online)
+
 
             AFAnalysis analysis1 = new ConcreteFactoryComplete();
             AFClient client1 = new AFClient(analysis1);
@@ -21,6 +23,28 @@ namespace Creational
             AFAnalysis analysis2 = new ConcreteFactoryHormones();
             AFClient client2 = new AFClient(analysis2);
             client2.Run();
+
+            //FM - report composition
+
+            HospitalDocument[] hospitalDocument = new HospitalDocument[2];
+
+            hospitalDocument[0] = new FullReport();
+            hospitalDocument[1] = new Report();
+
+            FMDocumentGenerator.CreateDocument(hospitalDocument);
+
+            //Builder
+
+            ConcreteBuilder builder = new ConcreteBuilder();
+            Director director = new Director(builder);
+            director.Construct();
+            Diet diet = builder.GetResult();
+
+            //Prototype - clone needed data by id without giving direct access
+
+
+            //Singleton
+
 
             Console.ReadKey();
         }

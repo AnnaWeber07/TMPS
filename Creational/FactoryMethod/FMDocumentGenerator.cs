@@ -12,7 +12,7 @@ namespace Creational.FactoryMethod
             foreach (HospitalDocument document in documents)
             {
                 Console.WriteLine("\n" + document.GetType().Name + "--");
-                foreach (Subsection section in document.Sections)
+                foreach (Subsection section in document.Subsections)
                 {
                     Console.WriteLine(" " + section.GetType().Name);
                 }
