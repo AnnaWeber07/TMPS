@@ -6,7 +6,7 @@ namespace Creational.AbstractFactory
     {
         public override void GenerateHormonesList()
         {
-            Console.WriteLine("This is a Specific Hormones  Blood Analysis: ");
+            Console.WriteLine("This is a Specific Hormones Blood Analysis: ");
         }
     }
 }

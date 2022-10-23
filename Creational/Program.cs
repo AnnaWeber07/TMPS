@@ -9,7 +9,10 @@ namespace Creational
         {
             //in this lab work I've implemented 5 creational patterns
 
-            //AF
+            //AF - generating 2 types of blood analysis list,
+            //complete and specific ones
+
+            //FM - create a session with doctors (offline/online)
 
             AFAnalysis analysis1 = new ConcreteFactoryComplete();
             AFClient client1 = new AFClient(analysis1);
