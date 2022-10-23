@@ -17,4 +17,5 @@ namespace Creational.Singleton
                 instance = new Singleton();
             return instance;
         }
+    }
 }
